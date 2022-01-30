@@ -4,7 +4,6 @@ class Solution {
         ListNode prev = null;
         
         //Make a while loop
-        
         while (head != null){
             //Make a new node so you can reference it (forwards)
             ListNode next_node = head.next;
@@ -18,4 +17,3 @@ class Solution {
         return prev;
     }
 }
-
