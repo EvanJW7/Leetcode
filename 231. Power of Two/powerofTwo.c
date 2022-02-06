@@ -6,7 +6,7 @@ bool isPowerOfTwo(int n){
     return !(n&(n-1));
     
     //Explanation:
-    //In binary, all powers of two will only have one 1 in them. 
+    //In binary, all powers of two will only contain one 1
     //For example, 4 is represented as 0100. 
     //0100 -1 flips the digits to 1011
     //0100 & 1011 == 0000 due to propositional logic
