@@ -3,7 +3,6 @@ class Solution {
         //Make a hashmap to store key, value pairs
         Map<Integer, Integer> seen = new HashMap<>();
         
-        
         //Logic - loop throught the nums list, if we have seen a value that equals to target return the indexes
         //Otherwise, continue to build the hashmap 
         for (int i = 0; i<nums.length; i++){
