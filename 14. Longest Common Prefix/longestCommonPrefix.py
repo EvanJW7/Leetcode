@@ -6,18 +6,14 @@ class Solution:
         if len(strs) == 1:
             return strs[0]
         
-        #Make an empty prefix to add to later
-        prefix = ""
-        first_word = strs[0]
+        #Logic: we are using the first word as the prefix and comparing it to the other words in the strs list
+        #If they are not the same, shorten the prefix by one until you get someting in common
+        prefix = strs[0]
         
-        for i in range(len(first_word)):
-            for word in strs:
-                #If it is out of bounds or not equal to the same letter, return what prefix we have
-                if i == len(word) or word[i] != first_word[i]:
-                    return prefix
-            #If that is not the case, continue to build the prefix 
-            prefix += word[i]
-        
+        for word in strs[1:]:
+            while prefix != word[0:len(prefix)]:
+                prefix = prefix[0:len(prefix)-1]
+
         return prefix 
     
     
