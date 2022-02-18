@@ -9,7 +9,7 @@ class Solution:
             #If the num is not in the dictionary, add it with a count of one
             if num not in storage:
                 storage[num] = 1
-            #If the num is already in the dictionary, delete it becuase it is not our answer 
+            #If the num is already in the dictionary, delete it because it is not our answer 
             else:
                 del storage[num]
                 
