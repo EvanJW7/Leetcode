@@ -11,6 +11,8 @@ class Solution:
         prefix = strs[0]
         
         for word in strs[1:]:
+            #You must say != here and not 'in'. You have to account for the right index starting at 0.
+            #While the prefix is not equal to the slice of the other words, make the prefix one letter shorter
             while prefix != word[0:len(prefix)]:
                 prefix = prefix[0:len(prefix)-1]
 
