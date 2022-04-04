@@ -1,6 +1,6 @@
 class Solution:
     def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
-        #First off, we want to sort the array so we can check the differences between one to another
+        #First off, we want to sort the array so we can check the differences from one to another
         arr.sort()
         #Now find the minimum difference of all the nums in arr
         mins = []
