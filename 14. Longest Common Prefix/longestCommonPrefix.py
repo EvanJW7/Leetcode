@@ -7,7 +7,7 @@ class Solution:
             return strs[0]
         
         #Logic: we are using the first word as the prefix and comparing it to the other words in the strs list
-        #If they are not the same, shorten the prefix by one until you get someting in common
+        #If they are not the same, shorten the prefix by one until you get something in common
         prefix = strs[0]
         
         for word in strs[1:]:
