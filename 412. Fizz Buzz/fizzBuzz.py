@@ -3,8 +3,9 @@ class Solution:
         #Make empty list
         output = []
         #Iterate over each num in range 1, n+1
+        #To speed up run time, start off saying if num%15 instead of %3 and %5.
         for num in range(1, n+1):
-            if num%3 == 0 and num%5 == 0:
+            if num%15 == 0:
                 output.append("FizzBuzz")
             elif num%3 == 0:
                 output.append("Fizz")
