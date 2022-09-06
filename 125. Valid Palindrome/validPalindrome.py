@@ -6,7 +6,7 @@ class Solution:
         for letter in s:
             if letter.isalnum():
                 myList.append(letter.lower())
-        #Check if the new list is the same forwards and backwards, if so, True 
+        #Check if the new list is the same forwards and backwards, if so we can return True 
         if myList[::] == myList[::-1]:
             return True 
         return False 
